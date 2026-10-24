@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fbe4ec">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="description" content="But I'm ready to make it right. Will you hear me out?">
+<meta property="og:type" content="website"><meta property="og:site_name" content="For Muskuuu">
+<meta property="og:title" content="I Messed Up, Muskuuu 😳">
+<meta property="og:description" content="But I'm ready to make it right. Will you hear me out?">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="I Messed Up, Muskuuu - first page of the apology website">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="I Messed Up, Muskuuu 😳">
+<meta name="twitter:description" content="But I'm ready to make it right. Will you hear me out?"><meta name="twitter:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og-image.jpg">
+<title>I Messed Up, Muskuuu</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=DM+Serif+Display&family=Inter:wght@400;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{background:linear-gradient(135deg,#fbe4ec,#ead9ee)}
+html,body{height:100%;width:100%;overflow:hidden;overscroll-behavior:none}
+body{font-family:Inter,system-ui,sans-serif;color:#7a2a45;background:linear-gradient(135deg,#fbe4ec 0%,#f6dbe8 45%,#ead9ee 100%);touch-action:manipulation;-webkit-text-size-adjust:100%}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.fh{position:absolute;bottom:-30px;color:#e8658f;opacity:.55;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.screen{position:fixed;inset:0;display:none;flex-direction:column;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom));text-align:center;z-index:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.screen.on{display:flex;animation:fin .6s ease both}
+.in{margin:auto;display:flex;flex-direction:column;align-items:center;max-width:100%;width:100%}
+@keyframes fin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.script{font-family:'Dancing Script',cursive;font-weight:700}
+h1{font-size:clamp(24px,8vw,30px);color:#3b2a35;margin:14px 0 6px;line-height:1.2}
+p.sub{font-size:13px;color:#6b5a63;max-width:230px;line-height:1.5;margin-bottom:16px}
+.btn{border:0;cursor:pointer;font:700 12px Inter,sans-serif;color:#fff;padding:12px 24px;border-radius:30px;background:linear-gradient(180deg,#e0486f,#c2185b);box-shadow:0 5px 14px rgba(194,24,91,.35);transition:transform .15s}
+.btn:active{transform:scale(.95)}
+.btn.ghost{background:#f3eef0;color:#999;box-shadow:inset 0 0 0 1px #e2d8dc}
+/* crying characters */
+.cry{position:relative;container-type:inline-size;width:var(--w,150px);max-width:100%}
+.cry>img{display:block;width:100%;height:auto;filter:drop-shadow(0 6px 8px rgba(0,0,0,.15))}
+.cry>img+img{position:absolute;inset:0;margin:auto 0;transition:opacity .5s}
+.tr{position:absolute;width:5.2cqw;height:5.2cqw;margin:-2.6cqw 0 0 -2.6cqw;background:linear-gradient(135deg,#bfe6ff,#7cc4f2);border-radius:50% 0 50% 50%;box-shadow:0 0 0 .5cqw rgba(255,255,255,.55);opacity:0;animation:tear 1.9s ease-in infinite;animation-delay:var(--dl,0s);pointer-events:none}
+@keyframes tear{0%{opacity:0;transform:translateY(0) rotate(-45deg) scale(.2)}18%{opacity:1;transform:translateY(1cqw) rotate(-45deg) scale(1)}100%{opacity:0;transform:translateY(17cqw) rotate(-45deg) scale(.8)}}
+.sob{animation:sob 2.4s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes sob{0%,55%,100%{transform:none}60%{transform:translateY(2%) scale(1.02,.96)}66%{transform:translateY(-1%)}72%{transform:translateY(2%) scale(1.02,.96)}78%{transform:translateY(-1%) rotate(-1deg)}84%{transform:none}}
+.dab{animation:dab 2.2s ease-in-out infinite;transform-origin:70% 100%}
+@keyframes dab{0%,100%{transform:rotate(0)}30%{transform:rotate(-1.6deg) scale(1.01)}60%{transform:rotate(1.2deg)}}
+.hug{animation:hug 1.6s ease-in-out infinite}@keyframes hug{0%,100%{transform:scale(1)}40%{transform:scale(.93,1.04) translateY(-3px)}60%{transform:scale(1.04,.97)}}
+.wob{animation:wob 1.4s ease-in-out infinite}@keyframes wob{25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+.pop{animation:pop .7s cubic-bezier(.3,1.6,.5,1)}@keyframes pop{from{transform:scale(.6)}to{transform:none}}
+.stage{position:relative;width:min(200px,56vw);min-height:150px;margin-bottom:24px;display:flex;align-items:center;justify-content:center}
+.stage .cry{width:100%}.stage .cry.rab{width:78%}
+.shard{position:absolute;color:#e0264f;pointer-events:none;animation:shard 1.6s ease-in forwards}
+@keyframes shard{from{opacity:1;transform:translate(0,0) rotate(0)}to{opacity:0;transform:translate(var(--x),70px) rotate(var(--r))}}
+.h2{font-family:'Kaushan Script',cursive;font-size:clamp(21px,6.6vw,25px);color:#c2185b;margin-bottom:14px}
+.msg{font:700 13px 'DM Serif Display',serif;color:#b0305a;background:rgba(255,255,255,.55);padding:14px 22px;border-radius:12px;width:min(300px,86vw);margin-bottom:16px;min-height:46px;line-height:1.4}
+.row{display:flex;gap:12px}
+.ttl{font:400 22px 'DM Serif Display',serif;color:#d81b60;font-weight:700}
+.hint{font:italic 8px Inter;color:#c2185b;margin:2px 0 6px}
+.stack{position:relative;width:min(92vw,340px);height:62vh;height:62dvh;max-height:560px}
+.card{position:absolute;left:50%;top:50%;background:#fff;padding:9px 9px 8px;border-radius:7px;box-shadow:0 8px 22px rgba(120,30,70,.22);touch-action:none;cursor:grab;transition:transform .45s,opacity .45s;transform:translate(-50%,-50%) rotate(var(--r))}
+.card.drag{transition:none;cursor:grabbing}
+.card img{display:block;height:auto;aspect-ratio:var(--ar);width:min(76vw,290px,calc(46vh*var(--ar)));width:min(76vw,290px,calc(46dvh*var(--ar)));border-radius:3px;background:#fff;pointer-events:none;-webkit-user-drag:none}
+.card b{display:block;font:400 12px 'DM Serif Display',serif;color:#d81b60;padding:9px 0 2px}
+.env{position:relative;width:min(230px,70vw);height:150px;cursor:pointer;margin-bottom:24px;transition:transform .8s,opacity .8s}
+.env .bd{position:absolute;inset:0;background:#f6f1e7;border-radius:6px;border:2px solid #e3c25b;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.env .fl{position:absolute;left:0;right:0;top:0;height:78px;background:#f6bcc0;border:2px solid #e3c25b;border-radius:6px 6px 0 0;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s}
+.env.open .fl{transform:rotateX(180deg)}.env.go{transform:translateY(60px) scale(.7);opacity:0}
+.cta{font:400 11px 'Kaushan Script';color:#c2185b;letter-spacing:1px}
+.letter{width:min(92vw,340px);background:linear-gradient(#f8f6df,#f1eed3);padding:20px 18px 18px;border-radius:4px;box-shadow:0 8px 22px rgba(0,0,0,.14);font-family:'Dancing Script',cursive;font-weight:500;font-size:clamp(15px,4.4vw,17px);color:#4a3a40;line-height:1.55;text-align:center;overflow-wrap:anywhere}
+.letter p{margin-bottom:10px;min-height:1.5em;white-space:pre-line}
+.letter .cry{margin:6px auto 0}
+.cap{font:700 12px 'Dancing Script';color:#c2185b;letter-spacing:.5px;margin-bottom:8px;text-transform:uppercase}
+.meter{width:min(88vw,300px);background:rgba(255,255,255,.75);border-radius:14px;padding:18px 22px 22px;box-shadow:0 10px 26px rgba(120,30,70,.15);position:relative;overflow:hidden}
+.mimg{position:relative;width:170px;max-width:100%;margin:18px auto 14px}
+.mimg i.lb{position:absolute;bottom:4%;left:0;right:0;font:700 9px Inter;font-style:normal;letter-spacing:1px;color:#5d4037}
+.bar{height:10px;background:#f5c9d4;border-radius:8px;overflow:hidden;margin:10px 0 8px}.bar div{height:100%;width:0;background:linear-gradient(90deg,#e0486f,#c2185b);border-radius:8px;transition:width .4s}
+.pc{font:700 9px Inter;letter-spacing:.5px}.tap{font:italic 700 8px Inter;color:#b0305a;margin:12px 0}
+.hb{width:44px;height:44px;border-radius:50%;border:0;font-size:18px;color:#fff;background:linear-gradient(#ec5b82,#d32f6a);box-shadow:0 5px 12px rgba(194,24,91,.4);cursor:pointer}.hb:active{transform:scale(.88)}
+.forg{font:700 9px Inter;color:#c2185b;background:#fff;padding:4px 10px;border-radius:4px;display:none;margin:10px auto 0;width:max-content;box-shadow:0 0 0 1px #f2b6c8}
+.cf{position:absolute;width:6px;height:9px;top:0;animation:cf 2.8s ease-in forwards;pointer-events:none}
+@keyframes cf{to{transform:translate(var(--x),360px) rotate(540deg);opacity:0}}
+</style></head><body>
+<div id="hearts"></div>
+<audio id="song" loop preload="auto" playsinline><source src="song.mp3" type="audio/mpeg"></audio>
+
+<section class="screen on" id="s0"><div class="in">
+ <div class="cry sob" style="--w:min(130px,34vw)"><img src="cat-sorry.png" alt="sorry cat"><i class="tr" style="left:29.6%;top:56%"></i><i class="tr" style="left:52.6%;top:56%;--dl:.9s"></i></div>
+ <h1 class="script">I Messed Up, Muskuuu 😳</h1>
+ <p class="sub">But I'm ready to make it right. Will you hear me out?</p>
+ <button class="btn" onclick="go(1)">Listen to my heart 💗</button>
+</div></section>
+
+<section class="screen" id="s1"><div class="in">
+ <div class="stage" id="stage"></div>
+ <div class="h2" id="h2"></div>
+ <div class="msg" id="msg"></div>
+ <div class="row"><button class="btn ghost" onclick="stepBack()">← Back</button><button class="btn" onclick="stepNext()">Next →</button></div>
+</div></section>
+
+<section class="screen" id="s2"><div class="in">
+ <div class="ttl">Some Sweet Moments</div><div class="hint">(Swipe the cards)</div>
+ <div class="stack" id="stack"></div>
+ <button class="btn" id="cont2" style="display:none;width:170px;margin-top:6px" onclick="go(3)">Continue</button>
+</div></section>
+
+<section class="screen" id="s3"><div class="in">
+ <div id="envwrap"><div class="env" id="env" onclick="openEnv()"><div class="bd"></div><div class="fl"></div></div><div class="cta">CLICK TO OPEN ♥</div></div>
+ <div id="letterwrap" style="display:none"><div class="cap">A Virtual Peace Offering ❤️</div>
+  <div class="letter"><p id="l0"></p><p id="l1"></p><p id="l2"></p><p id="l3"></p><p id="l4"></p><p id="l5"></p><div class="cry" style="--w:112px"><img src="cat-gussa.png" alt="cat"></div></div>
+  <button class="btn" id="cont3" style="display:none;margin-top:14px" onclick="go(4)">Continue →</button></div>
+</div></section>
+
+<section class="screen" id="s4"><div class="in">
+ <div class="meter" id="meter">
+  <div class="cap" style="margin:0">Forgiveness Meter ♥</div>
+  <div class="mimg"><div class="cry sob" id="mcw" style="--w:100%"><img src="bear-crying.png" alt=""><i class="tr" style="left:33.3%;top:54%"></i><i class="tr" style="left:58.5%;top:57%;--dl:.8s"></i></div><div class="cry" id="mhw" style="--w:100%;position:absolute;inset:0;opacity:0;transition:opacity .5s"><img src="bears-comfort.png" alt=""></div><i class="lb" id="sn">SORRY NA</i></div>
+  <div class="bar"><div id="fill"></div></div><div class="pc" id="pc">0% FORGIVEN</div>
+  <div class="tap" id="tap">TAP THE HEART TO HEAL MY HEART!</div>
+  <button class="hb" id="hb" onclick="tapHeart()">🤍</button>
+  <div class="forg" id="forg">YOU'RE FORGIVEN! 💕</div>
+ </div>
+</div></section>
+
+<script>
+const $=id=>document.getElementById(id);let cur=0;
+/* ---- music: one element for the whole session; no visible controls ---- */
+const song=$('song');let audible=false,coldStart=false;song.volume=.85;
+function unlock(){if(audible)return;song.muted=false;const wasSilent=coldStart;
+ const p=song.play();p&&p.then(()=>{audible=true;if(wasSilent){song.currentTime=0;coldStart=false}}).catch(()=>{})}
+function bootMuted(){if(audible||!song.paused)return;song.muted=true;song.play().then(()=>{coldStart=true}).catch(()=>{})}
+function boot(){song.muted=false;const p=song.play();if(p)p.then(()=>{audible=true}).catch(bootMuted)}
+boot();song.addEventListener('canplaythrough',()=>{if(song.paused&&!audible)bootMuted()});
+addEventListener('load',()=>{if(song.paused&&!audible)bootMuted()});
+['touchend','pointerdown','click','keydown'].forEach(ev=>addEventListener(ev,unlock,{passive:true}));
+addEventListener('pagehide',()=>song.pause());
+addEventListener('pageshow',e=>{if(e.persisted){audible=false;boot()}});
+function go(n){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));$('s'+n).classList.add('on');$('s'+n).scrollTop=0;cur=n;clearInterval(sh);
+ if(n==1)setStep(0);if(n==2)initCards();if(n==3)resetLetter();if(n==4)resetMeter();}
+setInterval(()=>{const h=document.createElement('span');h.className='fh';h.textContent='♥';h.style.left=Math.random()*100+'%';h.style.fontSize=(8+Math.random()*14)+'px';h.style.animationDuration=(7+Math.random()*6)+'s';$('hearts').appendChild(h);setTimeout(()=>h.remove(),13000)},500);
+/* ---- steps ---- */
+const T=(a)=>a.map(([x,y,d])=>`<i class="tr" style="left:${x}%;top:${y}%;--dl:${d}s"></i>`).join('');
+const steps=[{t:'I Know I Hurt You',m:'Babu, mera babuuuuuuu'},{t:'You Mean Everything',m:'Meri babe gussa hai ?'},{t:"I'm Truly Sorry",m:'Sorry mera Bacha. I’m so sorry'}];
+let st=0,tm,tw,sh;
+function typeInto(el,txt,sp,done){clearInterval(tw);el.textContent='';let i=0;tw=setInterval(()=>{el.textContent=txt.slice(0,++i);if(i>=txt.length){clearInterval(tw);done&&done()}},sp)}
+function shards(){const g=$('stage');if(!g)return;for(const side of [0,1]){const s=document.createElement('span');s.className='shard';s.textContent=Math.random()>.5?'♥':'•';s.style.cssText=`font-size:${7+Math.random()*7}px;left:${side?80:14}%;top:${50+Math.random()*10}%;--x:${(side?1:-1)*(5+Math.random()*18)}px;--r:${Math.random()*200-100}deg`;g.appendChild(s);setTimeout(()=>s.remove(),1700)}}
+function setStep(i){st=i;clearTimeout(tm);clearInterval(sh);const s=steps[i];$('h2').textContent=s.t;$('h2').style.animation='none';void $('h2').offsetWidth;$('h2').style.animation='fin .6s both';typeInto($('msg'),s.m,45);
+ const g=$('stage');
+ if(i==0){g.innerHTML='<div class="cry rab" id="rbw"><img id="rb" class="wob" src="rabbit-broken.png"><img id="rh" src="rabbit-heart.png" style="opacity:0"></div>';
+  shards();sh=setInterval(shards,380);
+  tm=setTimeout(()=>{clearInterval(sh);$('rb').style.opacity=0;$('rb').classList.remove('wob');$('rh').style.opacity=1;$('rh').classList.add('pop')},3200)}
+ else if(i==1)g.innerHTML='<div class="cry dab pop">'+'<img src="bears-comfort.png">'+T([[29.8,52,0],[45.3,42,1]])+'</div>';
+ else g.innerHTML='<div class="cry sob pop"><img src="bear-crying.png">'+T([[33.3,54,0],[58.5,57,.8]])+'</div>'}
+function stepNext(){st<steps.length-1?setStep(st+1):go(2)}
+function stepBack(){st>0?setStep(st-1):go(0)}
+/* ---- photo cards ---- */
+const PH=['p1.jpg','p2.jpg','p3.jpg','p4.jpg','p5.jpg'];const PS=[[825,1100],[619,1100],[1100,619],[631,1100],[1100,619]];const caps=["I'm sorry 😔","Please forgive me 💗","You mean everything 💕","I'm sorry 😔","Please forgive me 💗"],rots=[0,-5,4,-3,5];let left=5;
+function initCards(){const s=$('stack');s.innerHTML='';left=5;$('cont2').style.display='none';
+ for(let i=0;i<5;i++){const c=document.createElement('div');c.className='card';c.style.setProperty('--r',rots[i]+'deg');c.style.zIndex=10-i;c.style.opacity=i<3?1:0;
+  c.innerHTML='<img src="'+PH[i]+'" style="--ar:'+PS[i][0]/PS[i][1]+'" alt=""><b>'+caps[i]+'</b>';s.appendChild(c)}bind()}
+function topCard(){return [...document.querySelectorAll('.card:not(.gone)')].sort((a,b)=>b.style.zIndex-a.style.zIndex)[0]}
+function fling(c,dir){c.classList.add('gone');c.style.transform='translate(calc(-50% + '+dir*130+'vw),-50%) rotate('+dir*40+'deg)';c.style.opacity=0;left--;
+ [...document.querySelectorAll('.card:not(.gone)')].slice(0,3).forEach(x=>x.style.opacity=1);if(left<=1)$('cont2').style.display='block'}
+function bind(){let c,x0,dx;const k=$('stack');
+ k.onpointerdown=e=>{c=topCard();if(!c)return;x0=e.clientX;dx=0;c.classList.add('drag');k.setPointerCapture(e.pointerId)};
+ k.onpointermove=e=>{if(!c)return;dx=e.clientX-x0;c.style.transform='translate(calc(-50% + '+dx+'px),-50%) rotate('+(dx/18)+'deg)'};
+ k.onpointerup=()=>{if(!c)return;c.classList.remove('drag');if(left>1&&(Math.abs(dx)>70||Math.abs(dx)<6))fling(c,dx<0?-1:1);else c.style.transform='';c=null}}
+/* ---- envelope + letter ---- */
+const L=["Muskuuu,","I’m really sorry, Muskuuu. I know you’re upset with me, and I’m sorry I didn’t give you the chance to speak and share your feelings. You mean so much to me.","Muskaan, gussa mat hua karo na, please.","I’m really sorry, Muskuuu. I accidentally upset the most precious and adorable person in my life — you.\n🥺","Please forgive me if I hurt you or wasted even a little of your precious time. I promise I didn’t mean to. 🥺💞","I promise you that I never meant to hurt you. Please forgive me, Muskuuu."];
+function resetLetter(){clearInterval(tw);$('envwrap').style.display='block';$('env').className='env';$('letterwrap').style.display='none';$('cont3').style.display='none';for(let i=0;i<6;i++)$('l'+i).textContent=''}
+function typeLetter(i){if(i>=L.length){$('cont3').style.display='inline-block';$('s3').scrollTo({top:1e5,behavior:'smooth'});return}
+ typeInto($('l'+i),L[i],26,()=>{$('s3').scrollTo({top:1e5,behavior:'smooth'});setTimeout(()=>typeLetter(i+1),280)})}
+function openEnv(){const e=$('env');if(e.classList.contains('open'))return;e.classList.add('open');setTimeout(()=>e.classList.add('go'),800);
+ setTimeout(()=>{$('envwrap').style.display='none';$('letterwrap').style.display='block';$('letterwrap').style.animation='fin .6s both';typeLetter(0)},1500)}
+/* ---- forgiveness meter ---- */
+let pct=0;
+function resetMeter(){pct=0;upd();$('mcw').style.opacity=1;$('mhw').style.opacity=0;$('mhw').classList.remove('hug');$('sn').style.display='block';$('hb').style.display='inline-block';$('tap').style.display='block';$('forg').style.display='none'}
+function upd(){$('fill').style.width=pct+'%';$('pc').textContent=pct+'% FORGIVEN'}
+function tapHeart(){if(pct>=100)return;pct+=10;upd();$('hb').textContent=pct>=50?'💗':'🤍';
+ if(pct>=100){$('mcw').style.opacity=0;$('mhw').style.opacity=1;$('mhw').classList.add('hug');$('sn').style.display='none';$('hb').style.display='none';$('tap').style.display='none';$('forg').style.display='block';confetti()}}
+function confetti(){const m=$('meter'),cols=['#e0486f','#f48fb1','#c2185b','#ffb3c7','#ff6f91'];
+ for(let i=0;i<46;i++){const d=document.createElement('span');d.className='cf';d.style.left=Math.random()*100+'%';d.style.background=cols[i%5];d.style.setProperty('--x',(Math.random()*60-30)+'px');d.style.animationDelay=Math.random()*.8+'s';d.style.borderRadius=i%3?'1px':'50%';m.appendChild(d);setTimeout(()=>d.remove(),4000)}
+ let k=0;const iv=setInterval(()=>{for(let i=0;i<14;i++){const d=document.createElement('span');d.className='cf';d.textContent='♥';d.style.cssText='left:'+Math.random()*100+'%;color:#e8658f;font-size:10px;width:auto;height:auto';d.style.setProperty('--x',(Math.random()*40-20)+'px');m.appendChild(d);setTimeout(()=>d.remove(),3200)}if(++k>3)clearInterval(iv)},900)}
+</script></body></html>
